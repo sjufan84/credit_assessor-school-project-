@@ -3,8 +3,6 @@ Using supervised learning with imbalanced data sets to evaluate credit risk
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
 The purpose of the analyses that we performed in this project was to identify the credit worthiness of borrowers applying for loans.  In order to train our model and predict whether or not a loan had a high risk of default, we utilized a dataset that included the size of the loan requested, the interest rate of the loan, the borrower's income, debt to income ratio, number of open accounts, derogatory marks, and total debt.  Our predictions result in a binary classification -- 0 for healthy loans and 1 for high-risk loans.  Our original dataset was highly imbalanced with value counts of approximately 75000 healthy loans and 2500 unhealthy loans, leading to the possibility that such skewed values would impact our model's ability to accurately predict especially the high-risk loans.  Our data was split into training and testing data using train_test_split. To address potential concerns of fitting our model to such imbalanced data, we initially fit our model to the original dataset and then to a newly generated oversampled and balanced one for comparative and analysis purposes.  We utilized the LogisticRegression module from scikit-learn on both of our models, but for our second model we used RandomOverSampler from imbalanced-learn to resample and balance our dataset values to see how it would affect the accuracy of our predictions. 
   
 
